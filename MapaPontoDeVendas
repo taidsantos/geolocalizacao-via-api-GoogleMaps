@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa de Pontos de Venda</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=#TOKENAPI"></script>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: { lat: -23.4680868, lng: -46.6998856 },            });
+
+            const locations = [
+                {  lat: -23.4856413, lng: -46.6992008, name: "Ponto 1" },
+                {  lat: -23.470902, lng: -46.695238 , name: "Ponto 2" },
+            ];
+
+            locations.forEach((location) => {
+                const marker = new google.maps.Marker({
+                    position: { lat: location.lat, lng: location.lng },
+                    map,
+                    title: location.name,
+                });
+            });
+        }
+    </script>
+</head>
+<body onload="initMap()">
+    <div id="map" style="height: 400px; width: 100%;"></div>
+</body>
+</html>
