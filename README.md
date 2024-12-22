@@ -1,7 +1,7 @@
 
 ## API Google Maps
 Geolocalização de determinados pontos no Google Maps via API </br>
-Criei esse projeto como freelancer para incorporar no site um mapa com os pontos de vendas destacados. </br>
+Criei esse projeto como freelancer para incorporar no site do cliente um mapa com os endereços dos pontos de vendas destacados. </br>
 
 ### 📋 Pré-requisitos
 Ativação da API do Google maps via [Google Cloud](https://cloud.google.com/) </br>
